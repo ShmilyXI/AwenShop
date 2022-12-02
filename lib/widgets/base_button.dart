@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:awenshop/res/resources.dart';
-import 'package:awenshop/util/theme_utils.dart';
+import 'package:AwenShop/res/resources.dart';
+import 'package:AwenShop/util/theme_utils.dart';
 
 /// 默认字号18，白字蓝底，高度48
 class BaseButton extends StatelessWidget {
@@ -43,36 +43,24 @@ class BaseButton extends StatelessWidget {
           foregroundColor: MaterialStateProperty.resolveWith(
             (states) {
               if (states.contains(MaterialState.disabled)) {
-                return disabledTextColor ??
-                    (isDark
-                        ? Colours.dark_text_disabled
-                        : Colours.text_disabled);
+                return disabledTextColor ?? (isDark ? Colours.dark_text_disabled : Colours.text_disabled);
               }
-              return textColor ??
-                  (isDark ? Colours.dark_button_text : Colors.white);
+              return textColor ?? (isDark ? Colours.dark_button_text : Colors.white);
             },
           ),
           // 背景颜色
           backgroundColor: MaterialStateProperty.resolveWith((states) {
             if (states.contains(MaterialState.disabled)) {
-              return disabledBackgroundColor ??
-                  (isDark
-                      ? Colours.dark_button_disabled
-                      : Colours.button_disabled);
+              return disabledBackgroundColor ?? (isDark ? Colours.dark_button_disabled : Colours.button_disabled);
             }
-            return backgroundColor ??
-                (isDark ? Colours.dark_app_main : Colours.app_main);
+            return backgroundColor ?? (isDark ? Colours.dark_app_main : Colours.app_main);
           }),
           // 水波纹
           overlayColor: MaterialStateProperty.resolveWith((states) {
-            return (textColor ??
-                    (isDark ? Colours.dark_button_text : Colors.white))
-                .withOpacity(0.12);
+            return (textColor ?? (isDark ? Colours.dark_button_text : Colors.white)).withOpacity(0.12);
           }),
           // 按钮最小大小
-          minimumSize: (minWidth == null || minHeight == null)
-              ? null
-              : MaterialStateProperty.all<Size>(Size(minWidth!, minHeight!)),
+          minimumSize: (minWidth == null || minHeight == null) ? null : MaterialStateProperty.all<Size>(Size(minWidth!, minHeight!)),
           padding: MaterialStateProperty.all<EdgeInsetsGeometry>(padding),
           shape: MaterialStateProperty.all<OutlinedBorder>(
             RoundedRectangleBorder(

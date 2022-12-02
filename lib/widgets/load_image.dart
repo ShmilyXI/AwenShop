@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:awenshop/util/image_utils.dart';
+import 'package:AwenShop/util/image_utils.dart';
 
 /// 图片加载（支持本地与网络图片）
 class LoadImage extends StatelessWidget {
@@ -28,8 +28,7 @@ class LoadImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (image.isEmpty || image.startsWith('http')) {
-      final Widget holder =
-          LoadAssetImage(holderImg, height: height, width: width, fit: fit);
+      final Widget holder = LoadAssetImage(holderImg, height: height, width: width, fit: fit);
       return CachedNetworkImage(
         imageUrl: image,
         placeholder: (_, __) => holder,
@@ -56,15 +55,7 @@ class LoadImage extends StatelessWidget {
 
 /// 加载本地资源图片
 class LoadAssetImage extends StatelessWidget {
-  const LoadAssetImage(this.image,
-      {super.key,
-      this.width,
-      this.height,
-      this.cacheWidth,
-      this.cacheHeight,
-      this.fit,
-      this.format = ImageFormat.png,
-      this.color});
+  const LoadAssetImage(this.image, {super.key, this.width, this.height, this.cacheWidth, this.cacheHeight, this.fit, this.format = ImageFormat.png, this.color});
 
   final String image;
   final double? width;

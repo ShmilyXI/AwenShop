@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:awenshop/res/resources.dart';
-import 'package:awenshop/util/theme_utils.dart';
-import 'package:awenshop/widgets/base_button.dart';
+import 'package:AwenShop/res/resources.dart';
+import 'package:AwenShop/util/theme_utils.dart';
+import 'package:AwenShop/widgets/base_button.dart';
 
 /// 自定义AppBar
 class BaseAppBar extends StatelessWidget implements PreferredSizeWidget {

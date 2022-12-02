@@ -1,6 +1,6 @@
 {
-    "name": "awenshop",
-    "short_name": "awenshop",
+    "name": "AwenShop",
+    "short_name": "AwenShop",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

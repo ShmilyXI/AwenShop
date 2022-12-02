@@ -1,14 +1,14 @@
-import 'package:awenshop/routers/not_found_page.dart';
-import 'package:awenshop/util/handle_error_utils.dart';
+import 'package:AwenShop/routers/not_found_page.dart';
+import 'package:AwenShop/util/handle_error_utils.dart';
 import 'package:flustars_flutter3/flustars_flutter3.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'dart:async';
-import 'package:awenshop/setting/provider/theme_provider.dart';
+import 'package:AwenShop/setting/provider/theme_provider.dart';
 import 'package:flutter/services.dart';
 import 'package:oktoast/oktoast.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:awenshop/routers/routers.dart';
+import 'package:AwenShop/routers/routers.dart';
 import 'package:provider/provider.dart';
 import 'package:url_strategy/url_strategy.dart';
 

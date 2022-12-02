@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:awenshop/res/resources.dart';
-import 'package:awenshop/util/device_utils.dart';
-import 'package:awenshop/widgets/load_image.dart';
-import 'package:awenshop/widgets/base_button.dart';
+import 'package:AwenShop/res/resources.dart';
+import 'package:AwenShop/util/device_utils.dart';
+import 'package:AwenShop/widgets/load_image.dart';
+import 'package:AwenShop/widgets/base_button.dart';
 
 /// 登录模块的输入框封装
 class BaseTextField extends StatefulWidget {

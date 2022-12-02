@@ -1,10 +1,10 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
-import 'package:awenshop/login/login_router.dart';
-import 'package:awenshop/home/home_page.dart';
-import 'package:awenshop/routers/base_router.dart';
-import 'package:awenshop/routers/not_found_page.dart';
-import 'package:awenshop/home/webview_page.dart';
+import 'package:AwenShop/login/login_router.dart';
+import 'package:AwenShop/home/home_page.dart';
+import 'package:AwenShop/routers/base_router.dart';
+import 'package:AwenShop/routers/not_found_page.dart';
+import 'package:AwenShop/home/webview_page.dart';
 
 class Routes {
   static String home = "/home"; // 首页

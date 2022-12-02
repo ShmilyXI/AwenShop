@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:awenshop/res/constant.dart';
-import 'package:awenshop/res/resources.dart';
-// import 'package:awenshop/routers/web_page_transitions.dart';
+import 'package:AwenShop/res/constant.dart';
+import 'package:AwenShop/res/resources.dart';
+// import 'package:AwenShop/routers/web_page_transitions.dart';
 import 'package:sp_util/sp_util.dart';
 
 extension ThemeModeExtension on ThemeMode {

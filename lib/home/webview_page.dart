@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:awenshop/res/gaps.dart';
-import 'package:awenshop/util/device_utils.dart';
-import 'package:awenshop/widgets/base_app_bar.dart';
+import 'package:AwenShop/res/gaps.dart';
+import 'package:AwenShop/util/device_utils.dart';
+import 'package:AwenShop/widgets/base_app_bar.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class WebViewPage extends StatefulWidget {

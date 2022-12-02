@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:awenshop/res/resources.dart';
+import 'package:AwenShop/res/resources.dart';
 
 /// 间隔
 /// 官方做法：https://github.com/flutter/flutter/pull/54394
