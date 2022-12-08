@@ -185,7 +185,7 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "9e1d22ec"
+      ref: HEAD
       resolved-ref: "9e1d22ec786494949637212e8cf3d4d8a1a27f94"
       url: "https://github.com/simplezhli/flutter_2d_amap.git"
     source: git
@@ -622,7 +622,7 @@ packages:
       name: sqflite
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.2.1"
+    version: "2.2.2"
   sqflite_common:
     dependency: transitive
     description:

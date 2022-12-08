@@ -6,6 +6,7 @@ import "page/reset_password_page.dart";
 import "page/register_page.dart";
 import 'page/update_password_page.dart';
 
+// 登陆路由
 class LoginRouter implements BaseRouterProvider {
   static String loginPage = '/login';
   static String smsLoginPage = '/smsLogin';

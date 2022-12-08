@@ -3,6 +3,7 @@ import 'package:AwenShop/login/widgets/base_text_field.dart';
 import 'package:AwenShop/res/constant.dart';
 import 'package:AwenShop/res/gaps.dart';
 import 'package:AwenShop/routers/fluro_navigator.dart';
+import 'package:AwenShop/store/store_router.dart';
 import 'package:AwenShop/util/other_utils.dart';
 import 'package:AwenShop/widgets/base_app_bar.dart';
 import 'package:AwenShop/widgets/base_button.dart';
@@ -71,7 +72,7 @@ class _LoginPageState extends State<LoginPage> with ChangeNotifierMixin<LoginPag
 
   void _login() {
     SpUtil.putString(Constant.phone, _phoneController.text);
-    // NavigatorUtils.push(context, StoreRouter.auditPage);
+    NavigatorUtils.push(context, StoreRouter.auditPage);
     print("登陆...");
   }
 

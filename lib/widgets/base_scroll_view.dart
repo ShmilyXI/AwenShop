@@ -10,12 +10,12 @@ class BaseScrollView extends StatelessWidget {
   const BaseScrollView({
     super.key,
     required this.children,
-    this.padding,
-    this.physics = const BouncingScrollPhysics(),
-    this.crossAxisAlignment = CrossAxisAlignment.start,
-    this.bottomButton,
-    this.keyboardConfig,
-    this.tapOutsideToDismisss = false,
+    this.padding, // 内边距
+    this.physics = const BouncingScrollPhysics(), // 弹性滚动
+    this.crossAxisAlignment = CrossAxisAlignment.start, // 默认左对齐
+    this.bottomButton, // 底部按钮
+    this.keyboardConfig, // 键盘处理
+    this.tapOutsideToDismiss = false, // 键盘外部按下将其关闭
     this.overScroll = 16.0,
   });
 
@@ -26,14 +26,13 @@ class BaseScrollView extends StatelessWidget {
   final Widget? bottomButton;
   final KeyboardActionsConfig? keyboardConfig;
   // 键盘外部按下将其关闭
-  final bool tapOutsideToDismisss;
+  final bool tapOutsideToDismiss;
   // 默认弹起位置在TextField的文字下面，可以添加此属性继续向上滑动一段距离。用来露出完整的TextField。
   final double overScroll;
 
   @override
   Widget build(BuildContext context) {
-    Widget contents =
-        Column(crossAxisAlignment: crossAxisAlignment, children: children);
+    Widget contents = Column(crossAxisAlignment: crossAxisAlignment, children: children);
 
     if (defaultTargetPlatform == TargetPlatform.iOS && keyboardConfig != null) {
       // ios键盘处理
@@ -45,9 +44,7 @@ class BaseScrollView extends StatelessWidget {
         isDialog: bottomButton != null, // 判断是否在dialog中使用
         overscroll: overScroll, // 额外滚动距离,如果文本框还有其他内容需要显示
         config: keyboardConfig!,
-        tapOutsideBehavior: tapOutsideToDismisss
-            ? TapOutsideBehavior.opaqueDismiss
-            : TapOutsideBehavior.none, // 外部点击行为
+        tapOutsideBehavior: tapOutsideToDismiss ? TapOutsideBehavior.opaqueDismiss : TapOutsideBehavior.none, // 外部点击行为
         child: contents,
       );
     } else {
